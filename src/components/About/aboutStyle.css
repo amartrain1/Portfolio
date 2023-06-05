@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cream)
+}
+
+.aboutEle {
+    margin: .5rem 0;
+}
+
+.picture {
+    border-radius: 20rem;
+    max-width: 50%;
+    border: solid #272727;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgAndText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hey {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.aboutParagraph {
+    width: 70%;
+    font-size: 1.5rem;
+}
