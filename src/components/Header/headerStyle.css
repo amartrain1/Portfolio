@@ -30,6 +30,7 @@ header {
     background-color: var(--cream);
     padding: 1rem 0;
     border-bottom: solid #272727;
+    overflow: hidden;
 }
 
 nav {
