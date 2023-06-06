@@ -2,18 +2,23 @@
     margin: 0;
     padding: 0;
     color: #272727;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 :root {
     --brown: #562C2C;
-    --orange: #F2542D;
+    --orange: #f35b35;
     --cream: #F5DFBB;
     --lightBlue: #0E9594;
     --darkBlue: #127475;
 }
 
+h1 {
+    background-color: var(--orange);
+}
+
 header {
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
     width: 25%;
     font-size: 200%;
     display: flex;
@@ -21,27 +26,41 @@ header {
     align-items: flex-end;
     flex-direction: column;
     text-align: right;
+    background-color: var(--orange);
+    border-right: solid #272727;
 }
 
 .mainHeaderNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--cream);
+    /* background-color: var(--cream); */
     padding: 1rem 0;
     border-bottom: solid #272727;
     overflow: hidden;
+    background-color: var(--orange)
+}
+
+.quote {
+    font-family: monospace;
+    background-color: var(--orange);
+    font-size: 2rem;
+    text-align: center;
 }
 
 nav {
     width: 25%;
     height: 100%;
+    padding-left: 3rem;
+    border-left: solid #272727;
+    background-color: var(--orange)
 }
 
 ul {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
 
 li {
@@ -49,6 +68,7 @@ li {
     flex-direction: row;
     justify-content: flex-start;
     height: 100%;
+    background-color: var(--orange)
 }
 
 li a {
@@ -63,7 +83,7 @@ li a {
     border-top: solid #272727 .1rem;
     border-left: solid #272727 .1rem;
     border-bottom: solid #272727 .1rem;
-    transition: background-color .75s, color .75s, transform .75s;
+    transition: background-color .5s, color .5s, transform .5s;
 }
 
 li a:hover {
@@ -72,8 +92,77 @@ li a:hover {
     transform: scale(1.1);
 }
 
+
 .active {
     background-color: #272727;
     color: white;
     transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .mainHeaderNav {
+        flex-direction: column;
+        padding-bottom: 0;
+        width: 100vw;
+    }
+
+    header {
+        text-align: center;
+        border-right: unset;
+        padding: 1rem 1rem .5rem 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .quote {
+        padding-block: 1rem;
+    }
+
+    nav {
+        border-left: 0;
+        padding-top: 1rem;
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    ul {
+        flex-direction: row;
+        background: none;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    li {
+        width: 20%;
+        height: unset;
+        text-align: center;
+        display: flex;
+
+    }
+
+    li a {
+        border-radius: 0;
+        height: 100%;
+        border-top: unset;
+        border-bottom: unset;
+        border-right: unset;
+        border: solid #272727 .125rem;
+        border-radius: 1rem;
+        padding-block: .5rem;
+        padding-inline: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    li a {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .quote {
+        display: none;
+    }
 }

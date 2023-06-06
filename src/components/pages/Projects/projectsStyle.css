@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2rem;
 }
 
 .projectEle {
@@ -11,6 +12,7 @@
 .title h1 {
     font-size: 3rem;
     text-decoration: underline;
+    background: none;
 }
 
 .projects {
@@ -37,7 +39,7 @@
     max-width: 100%;
     margin-top: 1rem;
     border-radius: 2rem;
-    transition: transform .75s, box-shadow .75s;
+    transition: transform .5s, box-shadow .5s;
 }
 
 .projectImg:hover {
@@ -48,6 +50,7 @@
 
 .projectTitle h2 {
     font-size: 2rem;
+    text-align: center;
 }
 
 .projectDesc {
@@ -58,4 +61,11 @@
 
 .closer {
     font-size: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .projects {
+        flex-direction: column;
+    }
 }

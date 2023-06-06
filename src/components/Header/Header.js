@@ -1,14 +1,15 @@
 import React from "react";
 import "./headerStyle.css";
 
-//! have active class ready
-
 const Header = ({ pageName, handlePageChange }) => {
   return (
     <div className="mainHeaderNav">
       <header>
-        <h1>Alexander Martrain</h1>
+        <h1 className='title'>Alexander Martrain</h1>
       </header>
+      <div>
+      <div className='quote'>"It's never too late to be what you might've been.” <br></br>- George Eliot</div>
+      </div>
       <nav>
         <ul>
           <li>
