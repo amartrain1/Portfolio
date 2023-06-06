@@ -28,12 +28,13 @@
 }
 
 .indProject a {
+    max-width: 70%;
     display: flex;
     justify-content: center;
 }
 
 .projectImg {
-    max-width: 70%;
+    max-width: 100%;
     margin-top: 1rem;
     border-radius: 2rem;
     transition: transform .75s, box-shadow .75s;

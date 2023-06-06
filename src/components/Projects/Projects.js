@@ -11,9 +11,9 @@ const Projects = () => {
       </div>
       <div className="projects">
         <div className="indProject projectEle">
-          <a href="https://lkrum.github.io/Movie-Night/">
+          <a href="https://dungeon-crawler-d.herokuapp.com/">
             <img
-              className="projectImg"
+              className="projectImg aSize"
               src={dungeon}
               alt="movie search app"
             ></img>
@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="indProject projectEle">
           <a href="https://lkrum.github.io/Movie-Night/">
             <img
-              className="projectImg"
+              className="projectImg aSize"
               src={movie}
               alt="movie search app"
             ></img>
