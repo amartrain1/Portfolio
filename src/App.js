@@ -1,19 +1,12 @@
-import Header from './components/Header/Header'
-import About from './components/About/About'
-import Projects from './components/Projects/Projects'
-import ContactMe from './components/ContactMe/ContactMe'
-import Resume from './components/Resume/Resume'
+import MainPage from './components/MainPage'
 
 function App() {
-  return (
-    <>
-    <Header />
-    <About />
-    <Projects />
-    <ContactMe />
-    <Resume />
-    </>
-  );
-}
-
-export default App;
+    return (
+      <>
+      <MainPage />
+      </>
+    );
+  }
+  
+  export default App;
+  
