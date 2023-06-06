@@ -1,0 +1,70 @@
+.mainContainer {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactImg {
+    max-width: 5rem;
+}
+
+.indContact {
+    margin: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.inputParent {
+    margin: .3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.formEle {
+    width: 40%;
+}
+
+.textBox {
+    padding: .2rem 0;
+    border: solid #272727 .1rem;
+    border-radius: .3rem;
+    background-color: rgb(233, 233, 233);
+}
+
+textarea {
+    height: 12.5rem;
+}
+
+::placeholder {
+    padding: .1rem;
+}
+
+.submit {
+    border: solid #272727 .1rem;
+    border-radius: .3rem;
+    background-color: rgb(119, 170, 95);
+    padding: .75rem 2.5rem;
+    font-size: 1.5rem;
+}
