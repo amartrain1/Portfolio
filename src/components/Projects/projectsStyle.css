@@ -1,0 +1,60 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectEle {
+    padding: .5rem 0;
+}
+
+.title h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.indProject {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.indProject a {
+    display: flex;
+    justify-content: center;
+}
+
+.projectImg {
+    max-width: 70%;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    transition: transform .75s, box-shadow .75s;
+}
+
+.projectImg:hover {
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.527);
+
+    transform: scale(1.05);
+}
+
+.projectTitle h2 {
+    font-size: 2rem;
+}
+
+.projectDesc {
+    font-size: 1.5rem;
+    width: 75%;
+    text-align: center;
+}
+
+.closer {
+    font-size: 3rem;
+}
