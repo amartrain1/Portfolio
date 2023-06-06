@@ -1,9 +1,12 @@
 import React from "react";
 import "./headerStyle.css";
 
+//! have active class ready
+
 const Header = () => {
+
   return (
-    <div className="headerNav">
+    <div className="mainHeaderNav">
       <header>
         <h1>Alexander Martrain</h1>
       </header>

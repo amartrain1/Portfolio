@@ -8,6 +8,9 @@ function App() {
   return (
     <>
     <Header />
+    <About />
+    <Projects />
+    <ContactMe />
     <Resume />
     </>
   );

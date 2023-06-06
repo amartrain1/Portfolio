@@ -6,7 +6,7 @@ import phone from "./images/phone.png";
 
 const ContactMe = () => {
   return (
-    <div className="mainContainer">
+    <div className="mainContact">
       <h1>Here are the best ways to contact me...</h1>
       <div className="contactContainer">
         <div className="indContact">

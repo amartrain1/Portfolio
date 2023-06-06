@@ -5,7 +5,7 @@ import movie from "./images/MovieNight-Screenshot.png";
 
 const Projects = () => {
   return (
-    <div className="main">
+    <div className="mainProjects">
       <div className="title projectEle">
         <h1>Projects</h1>
       </div>

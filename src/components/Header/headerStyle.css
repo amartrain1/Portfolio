@@ -23,7 +23,7 @@ header {
     text-align: right;
 }
 
-.headerNav {
+.mainHeaderNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,3 +71,8 @@ li a:hover {
     transform: scale(1.1);
 }
 
+.active {
+    background-color: #272727;
+    color: white;
+    transform: scale(1.1);
+}

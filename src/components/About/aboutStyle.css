@@ -14,12 +14,7 @@
     border: solid #272727;
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-}
-
-.about {
+.mainAbout {
     margin: 1rem;
     display: flex;
     flex-direction: column;
