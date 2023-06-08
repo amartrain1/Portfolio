@@ -2,6 +2,8 @@ import React, {useEffect} from 'react'
 import './resumeStyle.css'
 
 const Resume = () => {
+
+  // sets document title when this page is open
   useEffect(() => {
     document.title = 'Portfolio | Resume'
   })

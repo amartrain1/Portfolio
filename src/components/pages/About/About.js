@@ -3,6 +3,8 @@ import "./aboutStyle.css";
 import photo from "./images/pfp.png";
 
 const About = () => {
+
+  // changes document title when this page is open
   useEffect(() => {
     document.title = 'Portfolio | About Me'
   })

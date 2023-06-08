@@ -4,6 +4,8 @@ import dungeon from "./images/DungeonGame-Screenshot.png";
 import movie from "./images/MovieNight-Screenshot.png";
 
 const Projects = () => {
+
+  // sets document title when this page is open
   useEffect(() => {
     document.title = 'Portfolio | Projects'
   })

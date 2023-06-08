@@ -65,6 +65,7 @@ h1 {
 
 textarea {
     height: 7.5rem;
+    color: #272727;
 }
 
 ::placeholder {

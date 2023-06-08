@@ -6,10 +6,13 @@ import phone from "./images/phoneDark.png";
 import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
+
+  // changes document title when this page is open
   useEffect(() => {
     document.title = 'Portfolio | Contact Me'  
   })
 
+  // copied code from line 16 to line 36 from emailjs docs. link: https://www.emailjs.com/docs/examples/reactjs/
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -32,12 +35,14 @@ const ContactMe = () => {
       );
   };
 
+  // setting default values of each input field using useState for later use to clear the fields on form submit
   const [inputValues, setInputValues] = useState({
     user_name: "",
     user_email: "",
     message: "",
   });
 
+  // detects a change in the input fields and sets the current value to detected value
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setInputValues((prevInputValues) => ({
@@ -46,8 +51,12 @@ const ContactMe = () => {
     }));
   };
 
+  // sets default value of submit to false using useState for later use to show popup message and clear input fields
   const [submit, setSubmit] = useState(false);
+
+  // a function to be called when the submit button is clicked
   const handleSubmit = () => {
+    // added a 1 millisecond interval so the fields are cleared marginally later than the email is sent
     setTimeout(() => {
       setSubmit(true);
       setInputValues({
@@ -85,6 +94,7 @@ const ContactMe = () => {
         <i>...or use this email form!</i>
       </div>
       <div className="formContainer">
+        {/* defines ref to the 'form' object so useRef can detect it. runs the sendEmail function on form submit, sending an email using emailjs */}
         <form ref={form} onSubmit={sendEmail}>
           <div className="inputParent">
             <label className="formEle" for="name">
@@ -127,6 +137,7 @@ const ContactMe = () => {
               placeholder="Write your message here..."
             ></textarea>
           </div>
+          {/* if submit === false, className is set to 'hidden'; if submit === true, className is set to 'popUp' */}
           <p className={!submit ? "hidden" : "popUp"}>
             <i>Thanks for your message! I'll get back to you soon!</i>
           </p>
@@ -135,6 +146,7 @@ const ContactMe = () => {
               className="submit"
               type="submit"
               value="Send"
+              /* runs the handleSubmit function on click, setting input fields to their default value and showing the popup message on line 140 */
               onClick={handleSubmit}
             ></input>
           </div>

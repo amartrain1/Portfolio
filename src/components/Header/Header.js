@@ -1,6 +1,7 @@
 import React from "react";
 import "./headerStyle.css";
 
+// takes in pageName and handlePageChange in as props to assist the MainPage in changing pages
 const Header = ({ pageName, handlePageChange }) => {
   return (
     <div className="mainHeaderNav">
@@ -15,6 +16,7 @@ const Header = ({ pageName, handlePageChange }) => {
           <li>
             <a
               href="#about"
+              // changes page name to About through the handlePageChange function
               onClick={() => handlePageChange("About")}
               className={pageName === "About" ? "active" : ""}
             >
@@ -24,6 +26,7 @@ const Header = ({ pageName, handlePageChange }) => {
           <li>
             <a
               href="#projects"
+              // changes page name to Projects through the handlePageChange function
               onClick={() => handlePageChange("Projects")}
               className={pageName === "Projects" ? "active" : ""}
             >
@@ -33,6 +36,7 @@ const Header = ({ pageName, handlePageChange }) => {
           <li>
             <a
               href="#contact"
+              // changes page name to Contact through the handlePageChange function
               onClick={() => handlePageChange("Contact")}
               className={pageName === "Contact" ? "active" : ""}
             >
@@ -42,6 +46,7 @@ const Header = ({ pageName, handlePageChange }) => {
           <li>
             <a
               href="#resume"
+              // changes page name to Resume through the handlePageChange function
               onClick={() => handlePageChange("Resume")}
               className={pageName === "Resume" ? "active" : ""}
             >
