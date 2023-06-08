@@ -3,5 +3,8 @@
 }
 
 .placeholderText {
+    font-size: 3rem;
     text-align: center;
+    color: white;
+    font-weight: 400;
 }

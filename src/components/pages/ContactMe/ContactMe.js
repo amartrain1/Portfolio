@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./contactStyle.css";
-import github from "./images/github.png";
+import github from "./images/githubDark.png";
 import linkedin from "./images/linkedin.png";
-import phone from "./images/phone.png";
+import phone from "./images/phoneDark.png";
 import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {

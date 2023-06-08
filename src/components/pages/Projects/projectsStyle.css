@@ -9,11 +9,12 @@
     padding: .5rem 0;
 }
 
-.title h1 {
-    font-size: 3rem;
+.title {
+    font-size: 2rem;
     text-decoration: underline;
     background: none;
-    font-weight: 700;
+    font-weight: 500;
+    color: unset;
 }
 
 .projects {
@@ -60,7 +61,7 @@
     text-align: center;
 }
 
-.closer {
+.openClose {
     font-size: 3rem;
     text-align: center;
 }

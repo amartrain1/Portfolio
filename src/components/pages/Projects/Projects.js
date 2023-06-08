@@ -6,8 +6,8 @@ import movie from "./images/MovieNight-Screenshot.png";
 const Projects = () => {
   return (
     <div className="mainProjects">
-      <div className="title projectEle">
-        <h1>Projects</h1>
+      <div className="openClose projectEle">
+      <i>Here are some of my projects...</i>
       </div>
       <div className="projects">
         <div className="indProject projectEle">
@@ -43,8 +43,8 @@ const Projects = () => {
           </p>
         </div>
       </div>
-      <div className="closer projectEle">
-        <i>...and much more to come!</i>
+      <div className="openClose projectEle">
+        <i>...and there are many more to come!</i>
       </div>
     </div>
   );

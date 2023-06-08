@@ -6,9 +6,6 @@ import ContactMe from "./pages/ContactMe/ContactMe";
 import Resume from "./pages/Resume/Resume";
 
 function MainPage() {
-  const [ submit, setSubmit ] = useState(false)
-  const handleSubmit = () => setSubmit(true)
-
   const [pageName, setPageName] = useState("About");
 
   const renderPage = () => {
@@ -25,8 +22,6 @@ function MainPage() {
   };
 
   const handlePageChange = (page) => setPageName(page);
-
-
 
   return (
     <>

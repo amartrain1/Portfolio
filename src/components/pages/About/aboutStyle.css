@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: var(--cream);
+    background-color: var(--gray);
+}
+
+h2 {
+    /* font-size: 5rem; */
 }
 
 .aboutEle {
