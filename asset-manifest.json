@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.eb368ecb.css",
+    "main.js": "/Portfolio/static/js/main.3963779b.js",
+    "static/media/pfp.png": "/Portfolio/static/media/pfp.30257ef572a9850fe902.png",
+    "static/media/DungeonGame-Screenshot.png": "/Portfolio/static/media/DungeonGame-Screenshot.03483d5a67215049668b.png",
+    "static/media/MovieNight-Screenshot.png": "/Portfolio/static/media/MovieNight-Screenshot.e75b88fb72003e70ab19.png",
+    "index.html": "/Portfolio/index.html",
+    "main.eb368ecb.css.map": "/Portfolio/static/css/main.eb368ecb.css.map",
+    "main.3963779b.js.map": "/Portfolio/static/js/main.3963779b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb368ecb.css",
+    "static/js/main.3963779b.js"
+  ]
+}
