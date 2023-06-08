@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./aboutStyle.css";
 import photo from "./images/pfp.png";
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'Portfolio | About Me'
+  })
+
   return (
 
       <div className="mainAbout">

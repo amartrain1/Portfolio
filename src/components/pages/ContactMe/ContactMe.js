@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./contactStyle.css";
 import github from "./images/githubDark.png";
 import linkedin from "./images/linkedin.png";
@@ -6,6 +6,10 @@ import phone from "./images/phoneDark.png";
 import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
+  useEffect(() => {
+    document.title = 'Portfolio | Contact Me'  
+  })
+
   const form = useRef();
 
   const sendEmail = (e) => {

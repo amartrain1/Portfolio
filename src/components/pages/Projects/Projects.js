@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./projectsStyle.css";
 import dungeon from "./images/DungeonGame-Screenshot.png";
 import movie from "./images/MovieNight-Screenshot.png";
 
 const Projects = () => {
+  useEffect(() => {
+    document.title = 'Portfolio | Projects'
+  })
   return (
     <div className="mainProjects">
       <div className="openClose projectEle">
