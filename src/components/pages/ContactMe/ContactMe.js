@@ -7,7 +7,7 @@ import phone from "./images/phone.png";
 const ContactMe = () => {
   return (
     <div className="mainContact">
-      <h1>Here are the best ways to contact me...</h1>
+      <div className="topBottom">Here are the best ways to contact me...</div>
       <div className="contactContainer">
         <div className="indContact">
           <a href="https://github.com/amartrain1">
@@ -26,7 +26,7 @@ const ContactMe = () => {
           <p>(985) 302-9953</p>
         </div>
       </div>
-      <h1>...or use this nonfunctional email form!</h1>
+      <div className="topBottom">...or use this nonfunctional email form!</div>
       <div className="formContainer">
         <form>
           <div className="inputParent">
