@@ -61,6 +61,7 @@ h1 {
     border-radius: .3rem;
     background-color: rgb(233, 233, 233);
     font-size: 1rem;
+    color: #272727;
 }
 
 textarea {
