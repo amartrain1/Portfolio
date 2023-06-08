@@ -56,14 +56,14 @@ h1 {
 }
 
 .textBox {
-    padding: .2rem 0;
+    padding: .5rem .1rem;
     border: solid #272727 .1rem;
     border-radius: .3rem;
     background-color: rgb(233, 233, 233);
 }
 
 textarea {
-    height: 12.5rem;
+    height: 10rem;
 }
 
 ::placeholder {
@@ -73,9 +73,32 @@ textarea {
 .submit {
     border: solid #272727 .1rem;
     border-radius: .3rem;
-    background-color: rgb(119, 170, 95);
+    /* background-color: rgb(250, 250, 250); */
     padding: .75rem 2.5rem;
     font-size: 1.5rem;
+    transition: background-color .5s, color .5s;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #27272750;
+}
+
+.submit:active {
+    background-color: #272727;
+    color: white;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
 }
 
 @media only screen and (max-width: 1000px) {

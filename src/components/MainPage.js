@@ -6,11 +6,14 @@ import ContactMe from "./pages/ContactMe/ContactMe";
 import Resume from "./pages/Resume/Resume";
 
 function MainPage() {
+  const [ submit, setSubmit ] = useState(false)
+  const handleSubmit = () => setSubmit(true)
+
   const [pageName, setPageName] = useState("About");
 
   const renderPage = () => {
     if (pageName === "About") {
-      return <About />;
+      return <About submit={submit} handleSubmit={handleSubmit}/>;
     }
     if (pageName === "Projects") {
       return <Projects />;
@@ -22,6 +25,8 @@ function MainPage() {
   };
 
   const handlePageChange = (page) => setPageName(page);
+
+
 
   return (
     <>

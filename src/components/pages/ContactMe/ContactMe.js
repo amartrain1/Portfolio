@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./contactStyle.css";
 import github from "./images/github.png";
 import linkedin from "./images/linkedin.png";
 import phone from "./images/phone.png";
+import emailjs from "@emailjs/browser";
 
-const ContactMe = () => {
+const ContactMe = ({ submit, handleSubmit }) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_mlymv7f",
+        "template_4m825xl",
+        form.current,
+        "l_yVZmdwu1Qjov6PF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  
+
   return (
     <div className="mainContact">
       <div className="topBottom">Here are the best ways to contact me...</div>
@@ -28,7 +53,7 @@ const ContactMe = () => {
       </div>
       <div className="topBottom">...or use this nonfunctional email form!</div>
       <div className="formContainer">
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <div className="inputParent">
             <label className="formEle" for="name">
               Name
@@ -37,7 +62,7 @@ const ContactMe = () => {
               className="formEle textBox"
               type="text"
               id="name"
-              name="name"
+              name="user_name"
               placeholder="Your name..."
             ></input>
           </div>
@@ -49,7 +74,7 @@ const ContactMe = () => {
               className="formEle textBox"
               type="text"
               id="email"
-              name="email"
+              name="user_email"
               placeholder="Your email..."
             ></input>
           </div>
@@ -64,12 +89,9 @@ const ContactMe = () => {
               placeholder="Write your message here..."
             ></textarea>
           </div>
+          <p className={!submit ? 'hidden' : ''}>Thanks for your message! I'll get back to you soon!</p>
           <div className="inputParent">
-            <input
-              className="submit"
-              type="submit"
-              value="Submit"
-            ></input>
+            <input className="submit" type="submit" value="Send" onClick={handleSubmit}></input>
           </div>
         </form>
       </div>
