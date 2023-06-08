@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contactStyle.css";
 import github from "./images/github.png";
 import linkedin from "./images/linkedin.png";
 import phone from "./images/phone.png";
 import emailjs from "@emailjs/browser";
 
-const ContactMe = ({ submit, handleSubmit }) => {
+const ContactMe = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -28,11 +28,37 @@ const ContactMe = ({ submit, handleSubmit }) => {
       );
   };
 
-  
+  const [inputValues, setInputValues] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setInputValues((prevInputValues) => ({
+      ...prevInputValues,
+      [name]: value,
+    }));
+  };
+
+  const [submit, setSubmit] = useState(false);
+  const handleSubmit = () => {
+    setTimeout(() => {
+      setSubmit(true);
+      setInputValues({
+        user_name: "",
+        user_email: "",
+        message: "",
+      });
+    }, 1);
+  };
 
   return (
     <div className="mainContact">
-      <div className="topBottom">Here are the best ways to contact me...</div>
+      <div className="topBottom">
+        <i>Here are the best ways to contact me...</i>
+      </div>
       <div className="contactContainer">
         <div className="indContact">
           <a href="https://github.com/amartrain1">
@@ -51,7 +77,9 @@ const ContactMe = ({ submit, handleSubmit }) => {
           <p>(985) 302-9953</p>
         </div>
       </div>
-      <div className="topBottom">...or use this nonfunctional email form!</div>
+      <div className="topBottom">
+        <i>...or use this email form!</i>
+      </div>
       <div className="formContainer">
         <form ref={form} onSubmit={sendEmail}>
           <div className="inputParent">
@@ -61,6 +89,8 @@ const ContactMe = ({ submit, handleSubmit }) => {
             <input
               className="formEle textBox"
               type="text"
+              value={inputValues.user_name}
+              onChange={handleInputChange}
               id="name"
               name="user_name"
               placeholder="Your name..."
@@ -73,6 +103,8 @@ const ContactMe = ({ submit, handleSubmit }) => {
             <input
               className="formEle textBox"
               type="text"
+              onChange={handleInputChange}
+              value={inputValues.user_email}
               id="email"
               name="user_email"
               placeholder="Your email..."
@@ -84,14 +116,23 @@ const ContactMe = ({ submit, handleSubmit }) => {
             </label>
             <textarea
               className="formEle textBox"
+              value={inputValues.message}
+              onChange={handleInputChange}
               id="message"
               name="message"
               placeholder="Write your message here..."
             ></textarea>
           </div>
-          <p className={!submit ? 'hidden' : ''}>Thanks for your message! I'll get back to you soon!</p>
+          <p className={!submit ? "hidden" : "popUp"}>
+            <i>Thanks for your message! I'll get back to you soon!</i>
+          </p>
           <div className="inputParent">
-            <input className="submit" type="submit" value="Send" onClick={handleSubmit}></input>
+            <input
+              className="submit"
+              type="submit"
+              value="Send"
+              onClick={handleSubmit}
+            ></input>
           </div>
         </form>
       </div>

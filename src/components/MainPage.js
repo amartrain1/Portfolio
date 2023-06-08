@@ -13,7 +13,7 @@ function MainPage() {
 
   const renderPage = () => {
     if (pageName === "About") {
-      return <About submit={submit} handleSubmit={handleSubmit}/>;
+      return <About />;
     }
     if (pageName === "Projects") {
       return <Projects />;

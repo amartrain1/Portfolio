@@ -3,14 +3,14 @@ h1 {
 }
 
 .mainContact {
-    margin: 2rem;
+    margin: 2rem 2rem 1rem 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 .topBottom{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -56,14 +56,15 @@ h1 {
 }
 
 .textBox {
-    padding: .5rem .1rem;
+    padding: .5rem .3rem;
     border: solid #272727 .1rem;
     border-radius: .3rem;
     background-color: rgb(233, 233, 233);
+    font-size: 1rem;
 }
 
 textarea {
-    height: 10rem;
+    height: 7.5rem;
 }
 
 ::placeholder {
@@ -99,6 +100,11 @@ label {
 
 .hidden {
     display: none;
+}
+
+.popUp {
+    text-align: center;
+    margin: 1rem;
 }
 
 @media only screen and (max-width: 1000px) {
