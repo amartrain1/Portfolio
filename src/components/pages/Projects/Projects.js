@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./projectsStyle.css";
 import dungeon from "./images/DungeonGame-Screenshot.png";
 import movie from "./images/MovieNight-Screenshot.png";
+import beatBlend from "./images/BeatBlend-Screenshot.png";
 
 const Projects = () => {
 
@@ -15,6 +16,21 @@ const Projects = () => {
       <i>Here are some of my projects...</i>
       </div>
       <div className="projects">
+      <div className="indProject projectEle">
+          <a href="https://beat-blend-8886e9ea479f.herokuapp.com/">
+            <img
+              className="projectImg aSize"
+              src={beatBlend}
+              alt="movie search app"
+            ></img>
+          </a>
+          <div className="projectTitle projectEle">
+            <h2>Beat Blend</h2>
+          </div>
+          <p className="projectDesc projectEle">
+            Beat Blend is a social media platform that will revolutionize the way musicians collaborate and communicate.
+          </p>
+        </div>
         <div className="indProject projectEle">
           <a href="https://dungeon-crawler-d.herokuapp.com/">
             <img
@@ -47,6 +63,7 @@ const Projects = () => {
             title or genre.
           </p>
         </div>
+
       </div>
       <div className="openClose projectEle">
         <i>...and there are many more to come!</i>

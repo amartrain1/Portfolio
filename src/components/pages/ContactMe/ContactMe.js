@@ -6,11 +6,10 @@ import phone from "./images/phoneDark.png";
 import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
-
   // changes document title when this page is open
   useEffect(() => {
-    document.title = 'Portfolio | Contact Me'  
-  })
+    document.title = "Portfolio | Contact Me";
+  });
 
   // copied code from line 16 to line 36 from emailjs docs. link: https://www.emailjs.com/docs/examples/reactjs/
   const form = useRef();
