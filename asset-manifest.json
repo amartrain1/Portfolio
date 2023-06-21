@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.454b7aaf.css",
-    "main.js": "/Portfolio/static/js/main.3963779b.js",
+    "main.js": "/Portfolio/static/js/main.a79bf75c.js",
     "static/media/pfp.png": "/Portfolio/static/media/pfp.30257ef572a9850fe902.png",
     "static/media/DungeonGame-Screenshot.png": "/Portfolio/static/media/DungeonGame-Screenshot.03483d5a67215049668b.png",
+    "static/media/BeatBlend-Screenshot.png": "/Portfolio/static/media/BeatBlend-Screenshot.c0efecad52924b86de7a.png",
     "static/media/MovieNight-Screenshot.png": "/Portfolio/static/media/MovieNight-Screenshot.e75b88fb72003e70ab19.png",
     "index.html": "/Portfolio/index.html",
     "main.454b7aaf.css.map": "/Portfolio/static/css/main.454b7aaf.css.map",
-    "main.3963779b.js.map": "/Portfolio/static/js/main.3963779b.js.map"
+    "main.a79bf75c.js.map": "/Portfolio/static/js/main.a79bf75c.js.map"
   },
   "entrypoints": [
     "static/css/main.454b7aaf.css",
-    "static/js/main.3963779b.js"
+    "static/js/main.a79bf75c.js"
   ]
 }
